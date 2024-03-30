@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>SERCOPLUS</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
-      <div class="container">
+      <div class="container header">
         <a href="/">
           <img
             src="https://www.sercoplus.com/img/corporacion-sercoplus-logo-1632849710.jpg"
@@ -17,7 +22,10 @@
             width="200px"
           />
         </a>
-        <input type="text" class="input" />
+        <input type="text" class="input" placeholder="Buscar Producto..." />
+        <label for="open-shopping-cart">
+          <i class="fas fa-shopping-cart"></i>
+        </label>
       </div>
       <nav class="nav">
         <ul class="nav-menu">
@@ -28,11 +36,13 @@
           <li><a href="#">Promoción</a></li>
           <li><a href="#">Servicios</a></li>
           <li><a href="#">Pagos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
+    <!--  -->
 
+    <!-- HERO CONTENT -->
     <main class="container content-products">
       <div class="card">
         <img
@@ -58,10 +68,30 @@
           <button class="button card-button add-to-cart">Comprar</button>
         </div>
       </div>
+      <div class="card">
+        <img
+          src="https://www.sercoplus.com/43633-home_default/monitor-viewsonic-va2435-h-23-8-ips-f.jpg"
+          alt="Imagen de producto"
+          class="card-img product-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title product-name">MOTIOR 421558</h3>
+          <p class="card-price">S/ <span class="product-price">4200</span></p>
+          <button class="button card-button add-to-cart">Comprar</button>
+        </div>
+      </div>
     </main>
 
-    <div class="shopping-cart"></div>
+    <!-- SHOPPING CART -->
+    <input type="checkbox" id="open-shopping-cart" hidden />
+    <div class="shopping-cart-content">
+      <label for="open-shopping-cart" class="shopping-cart-close">
+        <i class="fas fa-times"></i>
+      </label>
+      <div class="shopping-cart"></div>
+    </div>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus
